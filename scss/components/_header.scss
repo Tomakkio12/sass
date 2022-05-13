@@ -1,0 +1,31 @@
+/* nesting o anidamiento */
+
+header{
+    background-color: blue;
+    nav{
+       ul{
+           list-style: none;
+           li{
+               list-style: circle;
+               a{
+                   text-decoration: underline;
+                   &:hover{
+                       color: orange;
+                   }
+                   @media screen and (max-width:540px) {
+                          text-decoration: dotted;
+                   }
+
+               }
+           }
+       } 
+    }
+/*media query*/
+@media screen and (max-width:450px) {
+    background-color: orange;
+}
+header{
+    margin: 0%;
+    padding: 0%;
+}
+}    
