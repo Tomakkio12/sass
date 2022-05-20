@@ -1,6 +1,7 @@
 @mixin flex ($flex) {
     display: $flex;
     align-items: $align;
+     justify-content: $content;
 }
 .header{
     @include flex(flex, center)
@@ -8,5 +9,5 @@
 
 .ul{
     @include flex(flex,flex-start);
-    
+
 }
